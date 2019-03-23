@@ -11,24 +11,22 @@
 </head>
 <body>
 
-    <div class="header">
-        <nav id="navigation">
-            <div class="topnav">
-                <a asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
-                <a asp-area="" asp-controller="Home" asp-action="Login">LOGIN</a>
-                <a asp-area="" asp-controller="Home" asp-action="Dashboard">DASHBOARD</a>
 
-                <a asp-area="" asp-controller="Home" asp-action="SignUp">SIGN UP</a>
-                <a asp-area="" asp-controller="Home" asp-action="PortfolioOptions">PORTFOLIO SELECT</a>
+    <div class="topnav">
+        <a asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
+        <a asp-area="" asp-controller="Home" asp-action="Login">LOGIN</a>
+        <a asp-area="" asp-controller="Home" asp-action="Dashboard">DASHBOARD</a>
 
-                <div class="topnav-right">
-                    <a asp-area="" asp-controller="Home" asp-action="About">ABOUT</a>
-                </div>
-            </div>
-        </nav>
+        <a asp-area="" asp-controller="Home" asp-action="SignUp">SIGN UP</a>
+        <a asp-area="" asp-controller="Home" asp-action="PortfolioOptions">PORTFOLIO SELECT</a>
+
+        <div class="topnav-right">
+            <a asp-area="" asp-controller="Home" asp-action="About">ABOUT</a>
+        </div>
     </div>
 
-    <div class="body-content">
+
+    <div>
         @RenderBody()
     </div>
 

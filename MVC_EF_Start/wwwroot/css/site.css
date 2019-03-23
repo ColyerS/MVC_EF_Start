@@ -1,41 +1,34 @@
-﻿body, html {
-    height: 100%;
+﻿body {
     margin: 0;
-    padding: 0;
-    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
-    font-size: 15px;
-    font-weight: 100;
+    padding: 0; 
 }
 
-.bg {
+.bgImage {
     /* The image used */
-    background-image: url("~/images/piggy.jpg");
+    background-color: #ff0000;
+    margin-top: 0;
+    background-image: url(../img/piggy.jpg);
+    width: 100%;
     /* Full height */
-    height: 100%;
     /* Center and scale the image nicely */
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    height: 300px;
 }
 
-header {
-    color: #fdbc00;
-    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
-    font-size: 25px;
-    font-weight: 100;
-}
 h1 {
     color: #fdbc00;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
     font-size: 80px;
     font-weight: 100;
-    height: auto;
     text-align: center;
+    margin: auto;
 }
 /*navigation structure*/
 .topnav {
     background-color: #333;
-    overflow: hidden;
+    overflow: hidden
 }
 
     /* Style the text inside the navigation bar */
@@ -68,18 +61,6 @@ h1 {
     .topnav-right {
         float: right;
     }
-
-article {
-    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    background-color: #fdbc00;
-    opacity: .65;
-    padding-top: 20%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 15%;
-}
 
 /* button formats*/
 .button {
