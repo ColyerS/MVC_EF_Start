@@ -7,51 +7,19 @@
     <meta charset="utf-8" />
     <title>My Dashboard</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 20%;
-            z-index: -2;
-            background-color: #f1f1f1;
-            height: 100%;
-            position: fixed; /* Make it stick, even on scroll */
-            overflow: auto; /* Enable scrolling if the sidenav has too much content */
-        }
-
-        /*.container {
-            display: table;
-            height: 100%;
-            width: 100%;
-        }
-
-        .divMel {
-            display: table-cell;
-            text-align: left;
-            width: 100%;
-            padding: 2%;
-        }
-
-        .left-half {
-            background: #aaa;
-            width: 70%;
-        }
-
-        .right-half {
-            background: #bbb;
-            width: 30%;
-        }*/
-    </style>
 </head>
 
 <body>
-    <ul>
-        <li><p></p></li>
-        <li><p>Life Interests: Adventurer</p></li>
-        <li><p>- Summary of investments</p></li>
-        <li><p>- Historical returns on purchased stocks over the last 5 days</li>
-    </ul>
+
+    <div class="leftcol">
+        <ul>
+            <li><p></p></li>
+            <li><p><h3>Life Interests: Adventurer</h3></p></li>
+            <li><p><h3>- Summary of investments</h3></p></li>
+            <li><p><h3>- Historical returns on purchased stocks over the last 5 days</h3></li>
+        </ul>
+    </div>
+
 
     <div style="margin-left:25%;padding:1px 16px;height:100%;">
         <center><h1> Stock Price Dashboard</h1></center>
@@ -79,12 +47,8 @@
             });
         </script>
 
-
-
-
         <center><h2>Stock Value (100s): Last 5 Days</h2></center>
         <canvas id="mixed-chart" height="250" width="400"></canvas>
-
         <script>
             var myMixedChart = new Chart(document.getElementById("mixed-chart"), {
                 type: 'bar',
@@ -160,16 +124,6 @@
                 },
                 options:
                 {
-                    /*layout:
-                    {
-                        padding:
-                        {
-                            left: 100,
-                            right: 100,
-                            top: 100,
-                            bottom: 100
-                        }
-                    },*/
                     legend: {
                         display: false,
                         position: 'right'
@@ -178,4 +132,7 @@
             });
         </script>
     </div>
+
+
+
 </body>

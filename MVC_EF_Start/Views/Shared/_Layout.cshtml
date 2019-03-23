@@ -9,14 +9,12 @@
     <script type="text/javascript" src="~/lib/chartjs-plugin-annotation-master/chartjs-plugin-annotation.min.js"></script>
     <script type="text/javascript" src="~/js/site.js"></script>
 </head>
+
 <body>
-
-
     <div class="topnav">
         <a asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
         <a asp-area="" asp-controller="Home" asp-action="Login">LOGIN</a>
         <a asp-area="" asp-controller="Home" asp-action="Dashboard">DASHBOARD</a>
-
         <a asp-area="" asp-controller="Home" asp-action="SignUp">SIGN UP</a>
         <a asp-area="" asp-controller="Home" asp-action="PortfolioOptions">PORTFOLIO SELECT</a>
 
@@ -24,12 +22,10 @@
             <a asp-area="" asp-controller="Home" asp-action="About">ABOUT</a>
         </div>
     </div>
-
-
-    <div>
+  
         @RenderBody()
-    </div>
 
+ 
     <div class="footer">
         <p>Authors: Mel Kurtz, Colyer Sigety, Taras Matiychuk, University of South Florida</p>
     </div>
