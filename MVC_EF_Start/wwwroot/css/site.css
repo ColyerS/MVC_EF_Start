@@ -1,4 +1,106 @@
-﻿body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("~/images/piggy.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    color: #fdbc00;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+}
+h1 {
+    color: #fdbc00;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+    height: auto;
+    text-align: center;
+}
+/*navigation structure*/
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+    /* Style the text inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #fdbc00;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    }
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #333;
+            color: white;
+        }
+
+    .topnav-right {
+        float: right;
+    }
+
+article {
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #fdbc00;
+    opacity: .65;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15%;
+}
+
+/* button formats*/
+.button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+/*table structure*/
+.fbTable {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+td {
+    padding: 10px;
 }

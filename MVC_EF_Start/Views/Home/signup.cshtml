@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "SignUp";
+}
+
+<body>
+    <h1> Tell us about yourself</h1>
+
+    <form action="/action_page.php">
+        First name:<br>
+        <input type="text" name="firstname">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname">
+        <br> Choose nickname:<br>
+        <input type="text" name"nickname">
+        <br> Password:<br>
+        <input type="password" name"password"><br>
+        <br>
+        <br>Gender:
+        <br> <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+        <br>
+        <br>
+        <select>
+            <option value="none">Select Interest</option>
+            <option value="binger">binger</option>
+            <option value="adventurer">adventurer</option>
+            <option value="sports_fan">sports fan</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+

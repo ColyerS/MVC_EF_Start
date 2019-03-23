@@ -8,5 +8,31 @@ namespace MVC_EF_Start.Controllers
     {
       return View();
     }
-  }
+
+    //add dashboard view
+    public IActionResult Dashboard()
+    {
+        return View();
+    }
+    //add portfolio
+    public IActionResult PortfolioOptions()
+    {
+        return View();
+    }
+    //add about page
+    public IActionResult About()
+    {
+        return View();
+    }
+    //add login page
+    public IActionResult Login()
+    {
+        return View();
+    }
+    //add signup page
+    public IActionResult Signup()
+    {
+        return View();
+    }
+}
 }

@@ -1,0 +1,182 @@
+﻿@{ViewData["Title"] = "Dashboard";}
+
+<link rel="stylesheet" href="wwwroot/css/site.css" />
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <style>
+
+        .container {
+            display: table;
+            height: 90%;
+            width: 90%;
+        }
+
+        div {
+            display: table-cell;
+            text-align: left;
+            width: 50%;
+            padding: 2%;
+        }
+
+        .left-half {
+            background: #aaa;
+            width: 70%;
+        }
+
+        .right-half {
+            background: #bbb;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Stock Price Dashboard</h1>
+
+    <div class="container">
+        <div class="left-half">
+            <center><h2>Cash Invested per Company</h2></center>
+            <canvas id="doughnut-chart" width="800" height="450"></canvas>
+            <script>
+                new Chart(document.getElementById("doughnut-chart"), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ["Apple Inc.", "Amazon", "Carvana Co.Class A", "TriNet Group Inc.", "TodaySquare Inc.Class A"],
+                        datasets: [
+                            {
+                                /*label: "Population (millions)",*/
+                                backgroundColor: ["#8e5ea2", "#3e95cd", "#3cb371", "#ffa500", "#ff0000"],
+                                data: [100, 100, 100, 100, 100]
+                            }
+                        ]
+                    },
+                    options: {
+                        title: {
+                            display: false,
+                            text: 'Predicted world population (millions) in 2050'
+                        }
+                    }
+                });
+            </script>
+
+
+
+
+            <center><h2>Stock Value (100s): Last 5 Days</h2></center>
+            <canvas id="mixed-chart" height="500" width="800"></canvas>
+
+            <script>
+                var myMixedChart = new Chart(document.getElementById("mixed-chart"), {
+                    type: 'bar',
+                    data: {
+                        labels: ["3/19", "3/20", "3/21", "3/22", "Today"],
+                        datasets:
+                            [{
+                                label: "Apple Inc.",
+                                type: "line",
+                                borderColor: "#8e5ea2",
+                                data: [450, 550, 500, 600, 400],
+                                fill: false
+                            },
+                            {
+                                label: "Amazon",
+                                type: "line",
+                                borderColor: "#3e95cd",
+                                data: [900, 1000, 950, 975, 985],
+                                fill: false
+                            },
+                            {
+                                label: "Carvana Co. Class A",
+                                type: "line",
+                                borderColor: "#3cb371",
+                                data: [100, 125, 115, 120, 110],
+                                fill: false
+                            },
+                            {
+                                label: "TriNet Group Inc.",
+                                type: "line",
+                                borderColor: "#ffa500",
+                                data: [90, 100, 110, 115, 100],
+                                fill: false
+                            },
+                            {
+                                label: "Square Inc. Class A",
+                                type: "line",
+                                borderColor: "#ff0000",
+                                data: [300, 275, 400, 350, 475],
+                                fill: false
+                            },
+                            {
+                                /*label: "TriNet Group Inc.",*/
+                                type: "bar",
+                                backgroundColor: "rgba(0,0,0,0.3)",
+                                data: [90, 100, 110, 115, 100],
+                            },
+                            {
+                                /* label: "Square Inc. Class A",*/
+                                type: "bar",
+                                backgroundColor: "rgba(0,0,0,0.3)",
+                                data: [300, 275, 400, 350, 475],
+                            },
+                            {
+                                /*label: "Carvana Co. Class A",*/
+                                type: "bar",
+                                backgroundColor: "rgba(0,0,0,0.3)",
+                                data: [100, 125, 115, 120, 110],
+                            },
+                            {
+                                /*label: "Apple Inc.",*/
+                                type: "bar",
+                                backgroundColor: "rgba(0,0,0,0.3)",
+                                data: [450, 550, 500, 600, 400],
+                            },
+                            {
+                                /*label: "Amazon",*/
+                                type: "bar",
+                                backgroundColor: "rgba(0,0,0,0.3)",
+                                backgroundColorHover: "#3e95cd",
+                                data: [900, 1000, 950, 975, 985]
+                            }]
+                    },
+                    options:
+                    {
+                        /*layout:
+                        {
+                            padding:
+                            {
+                                left: 100,
+                                right: 100,
+                                top: 100,
+                                bottom: 100
+                            }
+                        },*/
+                        legend: {
+                            display: false,
+                            position: 'right'
+                        }
+                    }
+                });
+            </script>
+
+        </div>
+
+
+
+
+        <div class="right-half">
+            <h2> Life Interests: Adventurer</h2>
+            <p><h2>- Summary of investments</h2></p>
+            <p><h2>- Historical returns on purchased stocks over the last 5 days</h2></p>
+            
+        </div>
+    </div>
+
+
+
+
+</body>
+</html >

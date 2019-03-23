@@ -1,0 +1,132 @@
+﻿@{ViewData["Title"] = "PortfolioOptions";}
+
+<head>
+    <title>Portfolio Options</title>
+</head>
+<body>
+    <h1>Portfolio Options</h1>
+    <h2>GetQuote</h2>
+    <a id="dbopt" asp-controller="Home" asp-action="PopulateSymbols"></a>
+    <hr />
+    <table class="fbTable">
+        <thead>
+            <tr>
+                <th>
+                    Stock Symbol
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Current Price/Unit
+                </th>
+                <th>
+                    $500 Investment Distribution
+                </th>
+                <th>
+                    Stocks to Purchase
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    AAPL
+                </td>
+                <td>
+                    Apple Inc.
+                </td>
+                <td>
+                    $191.05
+                </td>
+                <td>
+                    20%
+                </td>
+                <td>
+                    0.523
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    AMZN
+                </td>
+                <td>
+                    Amazon
+                </td>
+                <td>
+                    $1764.77
+                </td>
+                <td>
+                    20%
+                </td>
+                <td>
+                    0.0566
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    CVNA
+                </td>
+                <td>
+                    Carvana Co. Class A
+                </td>
+                <td>
+                    $55.62
+                </td>
+                <td>
+                    20%
+                </td>
+                <td>
+                    1.797
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    TNET
+                </td>
+                <td>
+                    TriNet Group Inc.
+                </td>
+                <td>
+                    $59
+                </td>
+                <td>
+                    20%
+                </td>
+                <td>
+                    1.694
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SQ
+                </td>
+                <td>
+                    Square Inc. Class A
+                </td>
+                <td>
+                    $75.09
+                </td>
+                <td>
+                    20%
+                </td>
+                <td>
+                    1.331
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <form action="http://google.com">
+                        <input type="button" value="Confirm Stocks" />
+                    </form>
+
+                    @*<a id="dbopt" asp-controller="Home" asp-action="PopulateSymbols"><img src="~/images/button_save-data.png" /></a>*@
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+    alertDbSave(@ViewBag.dbSuccessComp);
+    </script>
+</body>

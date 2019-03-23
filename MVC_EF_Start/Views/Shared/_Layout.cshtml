@@ -1,20 +1,40 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Investagon | </title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script type="text/javascript" src="~/js/Chart.min.js"></script>
+    <script type="text/javascript" src="~/lib/chartjs-plugin-annotation-master/chartjs-plugin-annotation.min.js"></script>
+    <script type="text/javascript" src="~/js/site.js"></script>
 </head>
 <body>
 
-  <div class="header">
-    Header goes here
-  </div>
-  
-  <div class="body-content">
-    @RenderBody()
-  </div>
+    <div class="header">
+        <nav id="navigation">
+            <div class="topnav">
+                <a asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
+                <a asp-area="" asp-controller="Home" asp-action="Login">LOGIN</a>
+                <a asp-area="" asp-controller="Home" asp-action="Dashboard">DASHBOARD</a>
 
-  <div class="footer">
-    Footer goes here
-  </div>
+                <a asp-area="" asp-controller="Home" asp-action="SignUp">SIGN UP</a>
+                <a asp-area="" asp-controller="Home" asp-action="PortfolioOptions">PORTFOLIO SELECT</a>
+
+                <div class="topnav-right">
+                    <a asp-area="" asp-controller="Home" asp-action="About">ABOUT</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="body-content">
+        @RenderBody()
+    </div>
+
+    <div class="footer">
+        <p>Authors: Mel Kurtz, Colyer Sigety, Taras Matiychuk, University of South Florida</p>
+    </div>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
