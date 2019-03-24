@@ -3,6 +3,9 @@
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-size: 20px;
+    color:black;
 }
 
 .bgImage {
@@ -27,6 +30,16 @@ h1 {
     text-align: center;
     margin: auto;
 }
+
+h2 {
+    color: black;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+    margin: auto;
+}
+
 /*navigation structure*/
 .topnav {
     background-color: #333;
@@ -39,7 +52,7 @@ h1 {
         float: left;
         color: #fdbc00;
         text-align: center;
-        padding: 14px 16px;
+        padding: 14px 14px;
         text-decoration: none;
         font-size: 17px;
         font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
@@ -107,9 +120,9 @@ td {
     height: 100%;
 }
 
+/*column text*/
     .leftcol ul {
         list-style-type: none;
-        padding: 1%;
     }
 
 .footer {

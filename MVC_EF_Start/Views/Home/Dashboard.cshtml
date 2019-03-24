@@ -1,24 +1,21 @@
 ﻿@{ViewData["Title"] = "My Dashboard";}
 
-<link rel="stylesheet" href="wwwroot/css/site.css" />
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8" />
-    <title>My Dashboard</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 
 <body>
 
-    <div class="leftcol">
-        <ul>
-            <li><p></p></li>
-            <li><p><h3>Life Interests: Adventurer</h3></p></li>
-            <li><p><h3>- Summary of investments</h3></p></li>
-            <li><p><h3>- Historical returns on purchased stocks over the last 5 days</h3></li>
-        </ul>
-    </div>
+        <div class="leftcol">
+
+            <ul>
+                <li><p><h3>Life Interests: Adventurer</h3></p></li>
+                <li><p><h3>- Summary of investments</h3></p></li>
+                <li><p><h3>- Historical returns on purchased stocks over the last 5 days</h3></p></li>
+            </ul>
+        </div>
+    
 
 
     <div style="margin-left:25%;padding:1px 16px;height:100%;">
@@ -32,7 +29,6 @@
                     labels: ["Apple Inc.", "Amazon", "Carvana Co.Class A", "TriNet Group Inc.", "TodaySquare Inc.Class A"],
                     datasets: [
                         {
-                            /*label: "Population (millions)",*/
                             backgroundColor: ["#8e5ea2", "#3e95cd", "#3cb371", "#ffa500", "#ff0000"],
                             data: [100, 100, 100, 100, 100]
                         }
