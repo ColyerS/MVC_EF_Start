@@ -19,7 +19,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 300px;
+    height: 600px;
+    position: relative;
+
+}
+
+.colyer {
+    position: relative;
+    display: inline-block;
+}
+
+.mel {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+}
+
+.taras {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 h1 {
@@ -132,4 +151,45 @@ td {
     color: white;
     font-size: 17px;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+}
+
+article {
+    font: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+    font-size: medium;
+    font-weight: 400;
+    background-color: hsla(0, 50%, 50%, 0.3);
+    opacity: .65;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+
+
+.getStarted{
+    position: relative;
+    max-width: 350px;
+    margin-left: 15%;
+    margin-right: auto;
+    margin-top: 60px;
+    font-family: Playfair Display, serif;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+input.button-add {
+    background-image: url(/img/start.png); 
+    background-color: transparent; 
+    background-repeat: no-repeat; 
+    background-position: 0px 0px; 
+    border: none; 
+    cursor: pointer; 
+    height: 53px; 
+    padding-left: 200px; 
+    vertical-align: middle; 
+    margin-left: 15%;
 }
