@@ -9,21 +9,22 @@ using MVC_EF_Start.Models;
 
 namespace MVC_EF_Start.Controllers
 {
-  public class DatabaseExampleController : Controller
-  {
-    public ApplicationDbContext dbContext;
-
-    public DatabaseExampleController(ApplicationDbContext context)
+    public class DatabaseExampleController : Controller
     {
-      dbContext = context;
-    }
+        public ApplicationDbContext dbContext;
 
-    public IActionResult Index()
+        public DatabaseExampleController(ApplicationDbContext context)
+        {
+            dbContext = context;
+        }
+
+
+        public IActionResult Index()
     {
       return View();
     }
 
-    public async Task<ViewResult> DatabaseOperations()
+        public async Task<ViewResult> DatabaseOperations()
     {
       // CREATE operation
       Company MyCompany = new Company();
