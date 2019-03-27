@@ -1,6 +1,11 @@
 ﻿body {
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-size: 20px;
+    color:black;
 }
 
 .bgImage {
@@ -14,7 +19,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 300px;
+    height: 600px;
+    position: relative;
+
+}
+
+.colyer {
+    position: relative;
+    display: inline-block;
+}
+
+.mel {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+}
+
+.taras {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 h1 {
@@ -25,10 +49,21 @@ h1 {
     text-align: center;
     margin: auto;
 }
+
+h2 {
+    color: black;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+    margin: auto;
+}
+
 /*navigation structure*/
 .topnav {
     background-color: #333;
-    overflow: hidden
+    overflow: hidden;
+    width: 100%;
 }
 
     /* Style the text inside the navigation bar */
@@ -36,7 +71,7 @@ h1 {
         float: left;
         color: #fdbc00;
         text-align: center;
-        padding: 14px 16px;
+        padding: 14px 14px;
         text-decoration: none;
         font-size: 17px;
         font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
@@ -58,9 +93,9 @@ h1 {
             color: white;
         }
 
-    .topnav-right {
-        float: right;
-    }
+.topnav-right {
+    float: right;
+}
 
 /* button formats*/
 .button {
@@ -79,9 +114,82 @@ h1 {
     table-layout: fixed;
     border-collapse: collapse;
 }
+
 tr:nth-child(even) {
     background-color: #ffffff;
 }
+
 td {
     padding: 10px;
+}
+
+/*left column*/
+
+.leftcol {
+    float: left;
+    width: 20%;
+    background-color: #f1f1f1;
+    padding: 1%;
+    z-index: -1;
+    padding-top: 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+/*column text*/
+    .leftcol ul {
+        list-style-type: none;
+    }
+
+.footer {
+    background-color: #333;
+    padding: 1%;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+}
+
+article {
+    font: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+    font-size: medium;
+    font-weight: 400;
+    background-color: hsla(0, 50%, 50%, 0.3);
+    opacity: .65;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+
+
+.getStarted{
+    position: relative;
+    max-width: 350px;
+    margin-left: 15%;
+    margin-right: auto;
+    margin-top: 60px;
+    font-family: Playfair Display, serif;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+input.button-add {
+    background-image: url(/img/start.png); 
+    background-color: transparent; 
+    background-repeat: no-repeat; 
+    background-position: 0px 0px; 
+    border: none; 
+    cursor: pointer; 
+    height: 53px; 
+    padding-left: 200px; 
+    vertical-align: middle; 
+    margin-left: 15%;
 }

@@ -25,3 +25,8 @@ namespace MVC_EF_Start.DataAccess
     ***/
 }
 
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Equity> Equities { get; set; }
+        public DbSet<App_Models.Price> Prices { get; set; }
+    }
+}
